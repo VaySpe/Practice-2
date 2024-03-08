@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Добавляем поля для ввода -->
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/etGroupNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Number"
+        android:layout_below="@id/etFullName"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_below="@id/etGroupNumber"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/etPracticeGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Practice Grade"
+        android:layout_below="@id/etAge"
+        android:layout_marginTop="20dp"
+        android:inputType="numberDecimal"
+        />
+
+    <!-- Кнопки для перехода на вторую активность -->
+    <Button
+        android:id="@+id/btnDeclarative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Declarative Transition"
+        android:layout_below="@id/etPracticeGrade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnProgrammatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programmatic Transition"
+        android:layout_below="@id/btnDeclarative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
